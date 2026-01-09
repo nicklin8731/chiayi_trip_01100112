@@ -20,17 +20,17 @@
 <body class="text-gray-800">
 
     <header class="bg-[#4a5d4e] text-white pt-10 pb-12 text-center shadow-md">
-        <h1 class="text-2xl font-bold tracking-widest mb-1">嘉義自駕即時導覽</h1>
-        <p class="text-sm opacity-80">2026.01.10 - 01.12</p>
+        <h1 class="text-2xl font-bold tracking-widest mb-1 text-white">嘉義自駕即時導覽</h1>
+        <p class="text-sm opacity-80 text-white">2026.01.10 - 01.12 [cite: 11, 98, 136, 167]</p>
         
         <div class="mt-6 flex justify-center items-center">
             <div id="weather-info" class="text-center">
-                <p class="text-[11px] opacity-70 mb-1">嘉義當地即時氣溫</p>
+                <p class="text-[11px] opacity-70 mb-1 text-white">嘉義當地即時氣溫</p>
                 <div class="flex items-center justify-center space-x-2">
-                    <span id="current-temp" class="text-3xl font-bold">--°C</span>
+                    <span id="current-temp" class="text-3xl font-bold text-white">--°C</span>
                     <div id="weather-icon" class="text-2xl text-yellow-300"><i class="fa-solid fa-spinner fa-spin"></i></div>
                 </div>
-                <p id="weather-desc" class="text-[10px] mt-1 opacity-80">讀取中...</p>
+                <p id="weather-desc" class="text-[10px] mt-1 opacity-80 text-white">讀取中...</p>
             </div>
         </div>
     </header>
@@ -46,81 +46,101 @@
 
         <div id="day-1" class="day-card active space-y-3">
             <div class="bg-blue-50 p-4 rounded-xl shadow-sm border-l-4 border-blue-500 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm text-blue-900">09:30 關西服務區集合 [cite: 163]</h3></div>
-                <a href="https://www.google.com/maps/search/%E9%97%9C%E8%A5%BF%E6%9C%8D%E5%8B%99%E5%8D%80" target="_blank" class="text-blue-500 nav-icon"><i class="fa-solid fa-location-dot"></i></a>
+                <div><h3 class="font-bold text-sm text-blue-900">09:30 關西服務區集合</h3></div>
+                <a href="https://www.google.com/search?q=https://maps.google.com/%3Fq%3D%E5%8F%B0%E4%B8%AD%E5%B8%82%E8%A5%BF%E5%A2%A9%E9%87%8C7%E9%84%B0%E7%A6%8F%E7%A7%91%E8%B7%AF18%E8%99%9F" target="_blank" class="text-blue-500 nav-icon"><i class="fa-solid fa-location-dot"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-400 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm">老井極上燒肉 福科店 [cite: 19]</h3><p class="text-[10px] text-gray-400">11:00 預約 9人 [cite: 21]</p></div>
-                <a href="https://www.google.com/maps/search/%E8%80%81%E4%BA%95%E6%A5%B5%E4%B8%8A%E7%87%92%E8%82%89+%E7%A6%8F%E7%A7%91%E5%BA%97" target="_blank" class="text-orange-500 nav-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                <div><h3 class="font-bold text-sm">老井極上燒肉 福科店</h3><p class="text-[10px] text-gray-400">11:00 預約 9人 [cite: 19, 21]</p></div>
+                <a href="https://www.google.com/search?q=https://maps.google.com/%3Fq%3D%E5%8D%97%E6%8A%95%E7%B8%A3%E5%8D%97%E6%8A%95%E5%B8%82%E5%B7%A5%E6%A5%AD%E5%8D%97%E5%85%AD%E8%B7%AF6%E8%99%9F" target="_blank" class="text-orange-500 nav-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-500 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm">半山夢工廠 [cite: 33]</h3><p class="text-[10px] text-gray-400">高30.8M生命樹 [cite: 25]</p></div>
-                <a href="https://www.google.com/maps/search/%E5%8D%8A%E5%B1%B1%E5%A4%A2%E5%B7%A5%E5%BB%A0" target="_blank" class="text-green-500 nav-icon"><i class="fa-solid fa-tree"></i></a>
+                <div><h3 class="font-bold text-sm">半山夢工廠</h3><p class="text-[10px] text-gray-400">生命樹 & 彩虹步道 [cite: 23, 25, 26]</p></div>
+                <a href="https://www.google.com/search?q=https://maps.google.com/%3Fq%3D%E5%98%89%E7%BE%A9%E5%B8%82%E6%9D%B1%E5%8D%80%E5%A4%A7%E9%9B%85%E8%B7%AF%E4%B8%80%E6%AE%B5888%E8%99%9F" target="_blank" class="text-green-500 nav-icon"><i class="fa-solid fa-tree"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-pink-400 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm">Hermit & Co. [cite: 52]</h3><p class="text-[10px] text-gray-400">百歲老木屋活化 [cite: 54]</p></div>
-                <a href="https://www.google.com/maps/search/HERMIT+%26+Co." target="_blank" class="text-pink-500 nav-icon"><i class="fa-solid fa-map-pin"></i></a>
+                <div><h3 class="font-bold text-sm">Hermit & Co.</h3><p class="text-[10px] text-gray-400">百歲木屋活化 [cite: 52, 54]</p></div>
+                <a href="https://www.google.com/search?q=https://maps.google.com/%3Fq%3D%E5%98%89%E7%BE%A9%E7%B8%A3%E7%95%AA%E8%B7%AF%E9%84%89%E5%85%A7%E7%94%95%E6%9D%91%E6%B9%965~3%E8%99%9F" target="_blank" class="text-pink-500 nav-icon"><i class="fa-solid fa-map-pin"></i></a>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-amber-600 flex justify-between items-center">
+                <div><h3 class="font-bold text-sm">三禾火雞肉飯</h3><p class="text-[10px] text-gray-400">在地經營超過30年 </p></div>
+                <a href="https://www.google.com/search?q=https://maps.google.com/%3Fq%3D%E5%98%89%E7%BE%A9%E7%B8%A3%E6%B0%B4%E4%B8%8A%E9%84%89%E5%8D%81%E4%B8%80%E6%8C%87%E5%8E%9D144%E8%99%9F" target="_blank" class="text-amber-600 nav-icon"><i class="fa-solid fa-utensils"></i></a>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-red-500 flex justify-between items-center">
+                <div><h3 class="font-bold text-sm">昭和十八 J18</h3><p class="text-[10px] text-gray-400">市定古蹟檜木建築 </p></div>
+                <a href="https://www.google.com/search?q=https://maps.google.com/%3Fq%3D%E5%98%89%E7%BE%A9%E7%B8%A3%E5%A4%AA%E4%BF%9D%E5%B8%82%E7%A5%A5%E5%92%8C%E4%B8%80%E8%B7%AF%E6%9D%B1%E6%AE%B5%E4%B8%80%E8%99%9F" target="_blank" class="text-red-500 nav-icon"><i class="fa-solid fa-torii-gate"></i></a>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-yellow-500 flex justify-between items-center">
+                <div><h3 class="font-bold text-sm">品安豆花</h3></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=老井極上燒肉+福科店6" target="_blank" class="text-yellow-500 nav-icon"><i class="fa-solid fa-ice-cream"></i></a>
             </div>
             <div class="bg-[#4a5d4e]/5 p-4 rounded-xl shadow-sm border-l-4 border-[#4a5d4e] flex justify-between items-center">
-                <div><h3 class="font-bold text-sm text-[#4a5d4e]">住宿：繪日之丘飯店 [cite: 91]</h3></div>
-                <a href="https://www.google.com/maps/search/%E5%A4%A9%E6%88%90%E6%96%87%E6%97%85-%E7%B9%AA%E6%97%A5%E4%B9%8B%E4%B8%98" target="_blank" class="text-[#4a5d4e] nav-icon"><i class="fa-solid fa-bed"></i></a>
+                <div><h3 class="font-bold text-sm text-[#4a5d4e]">住宿：繪日之丘飯店</h3><p class="text-[10px] text-gray-400">1/10 3人房x4間 [cite: 91, 93]</p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=老井極上燒肉+福科店7" target="_blank" class="text-[#4a5d4e] nav-icon"><i class="fa-solid fa-bed"></i></a>
             </div>
         </div>
 
         <div id="day-2" class="day-card space-y-3">
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-400 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm">綠洲 Oasis Brunch [cite: 106]</h3></div>
-                <a href="https://www.google.com/maps/search/%E7%B6%A0%E6%B4%B2+Oasis+Brunch" target="_blank" class="text-green-500 nav-icon"><i class="fa-solid fa-utensils"></i></a>
+                <div><h3 class="font-bold text-sm">綠洲 Oasis Brunch</h3><p class="text-[10px] text-gray-400">蘭井街161號 [cite: 106, 107]</p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=老井極上燒肉+福科店8" target="_blank" class="text-green-500 nav-icon"><i class="fa-solid fa-utensils"></i></a>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-400 flex justify-between items-center">
+                <div><h3 class="font-bold text-sm">弄來小餐桌</h3><p class="text-[10px] text-gray-400">吳鳳北路53號 </p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=老井極上燒肉+福科店9" target="_blank" class="text-orange-500 nav-icon"><i class="fa-solid fa-plate-wheat"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-sky-400 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm">摘杯憩茶所 [cite: 115]</h3><p class="text-[10px] text-sky-600">5隻店貓遊逛 [cite: 116]</p></div>
-                <a href="https://www.google.com/maps/search/%E6%91%98%E6%9D%AF%E6%86%A9%E8%8C%B6%E6%89%80" target="_blank" class="text-sky-500 nav-icon"><i class="fa-solid fa-cat"></i></a>
+                <div><h3 class="font-bold text-sm">摘杯憩茶所</h3><p class="text-[10px] text-sky-600">店貓遊逛/茶冰磚 [cite: 115, 116, 122]</p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠0" target="_blank" class="text-sky-500 nav-icon"><i class="fa-solid fa-cat"></i></a>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-blue-400 flex justify-between items-center">
+                <div><h3 class="font-bold text-sm">清豐濤月 景觀足湯</h3><p class="text-[10px] text-gray-400">足湯/限定飲品 </p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠1" target="_blank" class="text-blue-500 nav-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
             <div class="bg-[#4a5d4e]/5 p-4 rounded-xl shadow-sm border-l-4 border-[#4a5d4e] flex justify-between items-center">
-                <div><h3 class="font-bold text-sm text-[#4a5d4e]">住宿：歸樸森活 [cite: 129]</h3></div>
-                <a href="https://www.google.com/maps/search/%E6%AD%B8%E6%A8%B8%E6%A3%AE%E6%B4%BB" target="_blank" class="text-[#4a5d4e] nav-icon"><i class="fa-solid fa-tent"></i></a>
+                <div><h3 class="font-bold text-sm text-[#4a5d4e]">住宿：歸樸森活</h3><p class="text-[10px] text-gray-400">1/11 3人房x3間 [cite: 129, 133]</p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠2" target="_blank" class="text-[#4a5d4e] nav-icon"><i class="fa-solid fa-tent"></i></a>
             </div>
         </div>
 
         <div id="day-3" class="day-card space-y-3">
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-red-400 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm">白人牙膏觀光工廠 [cite: 42]</h3><p class="text-[10px] text-gray-400">送紅豆牛奶冰棒 [cite: 144]</p></div>
-                <a href="https://www.google.com/maps/search/%E7%99%BD%E4%BA%BA%E7%89%99%E8%86%8F%E8%A7%80%E5%85%89%E5%B7%A5%E5%BB%A0" target="_blank" class="text-red-500 nav-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                <div><h3 class="font-bold text-sm">白人牙膏觀光工廠</h3><p class="text-[10px] text-gray-400">將軍府與免費冰棒 [cite: 139, 144, 145]</p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠3" target="_blank" class="text-red-500 nav-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-500 flex justify-between items-center">
                 <div><h3 class="font-bold text-sm">海森 Hisun-日式炊飯餐館</h3></div>
                 <a href="https://share.google/T3BlDxERkp56l0v8g" target="_blank" class="text-orange-500 nav-icon"><i class="fa-solid fa-bowl-rice"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-emerald-600 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm">咩咩上樹萌寵樂園 [cite: 152]</h3></div>
-                <a href="https://www.google.com/maps/search/%E5%92%A9%E5%92%A9%E4%B8%8A%E6%A8%B9%E8%90%8C%E5%AF%B5%E6%A8%82%E5%9C%92" target="_blank" class="text-emerald-600 nav-icon"><i class="fa-solid fa-paw"></i></a>
+                <div><h3 class="font-bold text-sm">咩咩上樹萌寵樂園</h3><p class="text-[10px] text-gray-400">太保市萌寵體驗 [cite: 152, 153]</p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠4" target="_blank" class="text-emerald-600 nav-icon"><i class="fa-solid fa-paw"></i></a>
             </div>
         </div>
 
         <div id="day-drinks" class="day-card space-y-3">
             <div class="bg-pink-50 p-4 rounded-xl shadow-sm border-l-4 border-pink-500 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm text-pink-900">御香屋 (中山路總店)</h3><p class="text-[10px] text-pink-700">葡萄柚綠茶</p></div>
-                <a href="https://www.google.com/maps/search/%E5%BE%A1%E9%A6%99%E5%B1%8B" target="_blank" class="text-pink-500 nav-icon"><i class="fa-solid fa-mug-hot"></i></a>
+                <div><h3 class="font-bold text-sm text-pink-900">御香屋 (中山路總店)</h3></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠5" target="_blank" class="text-pink-500 nav-icon"><i class="fa-solid fa-mug-hot"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-pink-400 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm">青春樂順心茶飲 </h3><p class="text-[10px] text-pink-700">芭樂多酚 </p></div>
-                <a href="https://www.google.com/maps/search/%E9%9D%92%E6%98%A5%E6%A8%82%E9%A0%86%E5%BF%83%E8%8C%B6%E9%A3%B2" target="_blank" class="text-pink-400 nav-icon"><i class="fa-solid fa-glass-water"></i></a>
+                <div><h3 class="font-bold text-sm">青春樂順心茶飲</h3><p class="text-[10px] text-pink-700">芭樂多酚 [cite: 83, 86]</p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠6" target="_blank" class="text-pink-400 nav-icon"><i class="fa-solid fa-glass-water"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-blue-400 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm">Long Stay 龍喜爹 </h3><p class="text-[10px] text-blue-700">臥龍伏珠 </p></div>
-                <a href="https://www.google.com/maps/search/Long+Stay+%E9%BE%8D%E5%96%9C%E5%97%B2" target="_blank" class="text-blue-500 nav-icon"><i class="fa-solid fa-glass-water"></i></a>
+                <div><h3 class="font-bold text-sm">Long Stay 龍喜爹</h3><p class="text-[10px] text-blue-700">臥龍伏珠 [cite: 87]</p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠7" target="_blank" class="text-blue-500 nav-icon"><i class="fa-solid fa-glass-water"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-amber-600 flex justify-between items-center">
-                <div><h3 class="font-bold text-sm">榮興茶行 </h3><p class="text-[10px] text-amber-700">鍋煮鮮奶茶+仙草 </p></div>
-                <a href="https://www.google.com/maps/search/%E6%A6%AE%E8%88%88%E8%8C%B6%E8%A1%8C" target="_blank" class="text-amber-600 nav-icon"><i class="fa-solid fa-leaf"></i></a>
+                <div><h3 class="font-bold text-sm">榮興茶行</h3><p class="text-[10px] text-amber-700">鍋煮鮮奶茶+仙草 [cite: 94, 97]</p></div>
+                <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠8" target="_blank" class="text-amber-600 nav-icon"><i class="fa-solid fa-leaf"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-gray-400 flex justify-between items-center">
                 <div><h3 class="font-bold text-sm">知更鳥巢</h3></div>
-                <a href="https://www.google.com/maps/search/%E7%9F%A5%E6%9B%B4%E9%B3%A5%E5%B7%A2" target="_blank" class="text-gray-500 nav-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠9" target="_blank" class="text-gray-500 nav-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-600 flex justify-between items-center">
                 <div><h3 class="font-bold text-sm text-green-800">一沐日</h3></div>
-                <a href="https://www.google.com/maps/search/%E4%B8%80%E6%B2%B1%E6%97%A5" target="_blank" class="text-green-600 nav-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="https://www.google.com/maps/search/?api=1&query=天成文旅-繪日之丘0" target="_blank" class="text-green-600 nav-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
 
