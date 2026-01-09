@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品牌部 Vol.2：嘉義自駕即時預報版</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #fdfbf7; }
+        .day-card { display: none; }
+        .day-card.active { display: block; animation: slideUp 0.4s ease-out; }
+        @keyframes slideUp { from { transform: translateY(15px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        .nav-btn { background: #4a5d4e; color: white; padding: 6px 14px; border-radius: 8px; font-size: 0.85rem; display: inline-flex; align-items: center; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-[#4a5d4e] text-white py-8 text-center shadow-md">
+        <h1 class="text-2xl font-bold tracking-widest mb-1">嘉義自駕即時導覽</h1>
+        <p class="text-sm opacity-80">2026.01.10 - 01.12 | 品牌部特刊 Vol.2</p>
+    </header>
+
+    <section class="max-w-md mx-auto -mt-6 px-4">
+        <div class="bg-white p-4 rounded-2xl shadow-lg border border-sky-100">
+            <h3 class="text-xs font-bold text-gray-400 mb-2 uppercase tracking-wider text-center">Live Weather Update</h3>
+            <div 
+                class="tomorrow" 
+                data-location-id="064858" 
+                data-unit-system="METRIC" 
+                data-skin="light" 
+                data-widget-type="upcoming" 
+                style="padding-bottom:22px;position:relative;"
+            >
+                <a href="https://www.tomorrow.io/weather/" rel="nofollow noopener noreferrer" target="_blank" style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"><img src="https://www.tomorrow.io/v1/widget/sw/powered_by_light.svg" width="140" height="15" alt="Powered by Tomorrow.io"/></a>
+            </div>
+            <script>
+                (function(d, s, id) {
+                    if (d.getElementById(id)) return;
+                    var fjs = d.getElementsByTagName(s)[0];
+                    var js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'tomorrow-sdk'));
+            </script>
+            <p class="text-[10px] text-center text-gray-400 mt-2 italic">※ 元件將自動顯示嘉義地區未來三日預報</p>
+        </div>
+    </section>
+
+    <nav class="flex justify-center space-x-2 my-6">
+        <button onclick="showDay(1)" id="btn-1" class="tab-btn px-6 py-2 rounded-full font-bold bg-[#4a5d4e] text-white">Day 1</button>
+        <button onclick="showDay(2)" id="btn-2" class="tab-btn px-6 py-2 rounded-full font-bold bg-white border border-gray-300">Day 2</button>
+        <button onclick="showDay(3)" id="btn-3" class="tab-btn px-6 py-2 rounded-full font-bold bg-white border border-gray-300">Day 3</button>
+    </nav>
+
+    <main class="max-w-md mx-auto px-4 pb-24">
+        <div id="day-1" class="day-card active space-y-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-orange-400">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-sm">老井燒肉 (11:00)</h3>
+                        <p class="text-[10px] text-gray-500">台中市福科路18號 [cite: 19, 21]</p>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=老井極上燒肉福科店" target="_blank" class="nav-btn">導航</a>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-green-500">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-sm">半山夢工廠</h3>
+                        <p class="text-[10px] text-gray-500">南投市工業南六路6號 [cite: 33, 35]</p>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=半山夢工廠" target="_blank" class="nav-btn">導航</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="day-2" class="day-card space-y-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-pink-400">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-sm">HERMIT & Co.</h3>
+                        <p class="text-[10px] text-gray-500">嘉義市成仁街209號 [cite: 52, 53]</p>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=HERMIT+嘉義" target="_blank" class="nav-btn">導航</a>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-blue-400">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-sm">清豐濤月 (足湯)</h3>
+                        <p class="text-[10px] text-gray-500">嘉義縣番路鄉內甕村 [cite: 44, 126]</p>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=清豐濤月景觀餐廳" target="_blank" class="nav-btn">導航</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="day-3" class="day-card space-y-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-red-400">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-sm">白人牙膏觀光工廠</h3>
+                        <p class="text-[10px] text-gray-500">嘉義縣水上鄉 [cite: 42, 141]</p>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=白人牙膏觀光工廠" target="_blank" class="nav-btn">導航</a>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-green-600">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-sm">咩咩上樹萌寵樂園</h3>
+                        <p class="text-[10px] text-gray-500">太保市祥和一路 [cite: 152, 153]</p>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=咩咩上樹萌寵樂園" target="_blank" class="nav-btn">導航</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function showDay(dayNum) {
+            document.querySelectorAll('.day-card').forEach(card => card.classList.remove('active'));
+            document.getElementById('day-' + dayNum).classList.add('active');
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = "tab-btn px-6 py-2 rounded-full font-bold bg-white border border-gray-300 text-gray-600";
+            });
+            document.getElementById('btn-' + dayNum).className = "tab-btn px-6 py-2 rounded-full font-bold bg-[#4a5d4e] text-white shadow-md";
+        }
+    </script>
+</body>
+</html>
